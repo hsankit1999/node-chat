@@ -3,14 +3,15 @@ const path=require('path');
 const socketIO=require('socket.io');
 var http=require('http');
 var os=require('os');
+
 var bodyParser=require('body-parser');
 var coors=require('cors');
 const publicPath=path.join(__dirname,"../public");
-
+var port=process.env.PORT || 3000;
 var app=express();
 
 var server=http.createServer(app);
-var port=process.env.PORT || 3000;
+
 var io=socketIO(server);
 var {generateMsg}=require('./message');
 app.use(express.static(publicPath));
