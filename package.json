@@ -13,7 +13,8 @@
     "heroku": "^0.2.0",
     "socket.io": "^2.0.4",
     "moment": "^2.19.3",
-    "mustache": "^2.3.0"
+    "mustache": "^2.3.0",
+    "deparam": "^1.0.5"
   },
   "engines":{
     "node":"6.11.4"
